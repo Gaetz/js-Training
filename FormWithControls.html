@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="formWithControls.css">
+        <title>Form with controls</title>
+    </head>
+
+    <body>
+        <form id="formWithControls">
+
+            <div>
+                <span class="formTitle">Genre</span>
+                <label><input type="radio" name="genre" value="female"/ >Female</label>
+                <label><input type="radio" name="genre" value="male"/ >Male</label>
+                <label><input type="radio" name="genre" value="undetermined"/ >Undetermined</label>
+                <span class="help">Please select a genre.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Name</span>
+                <input type="text" id="name" name="name"/ >
+                <span class="help">Your name must contains more than 2 caracters.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Surname</span>
+                <input type="text" id="surname" name="surname"/ >
+                <span class="help">Your surname must contains more than 2 caracters.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Age</span>
+                <input type="text" id="age" name="age"/ >
+                <span class="help">Your age must be a number between 5 and 140.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Nickname</span>
+                <input type="text" id="nickname" name="nickname"/ >
+                <span class="help">Your nickname must contains more than 4 caracters.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Password</span>
+                <input type="password" id="passwd" name=""passwd"/ >
+                <span class="help">Your password must contains more than 6 caracters.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Retype password</span>
+                <input type="password" id="passw2" name="passwd2"/ >
+                <span class="help">This password must be identical to the first one.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Country</span>
+                <select>
+                    <option name="country" value="france">France</option>
+                    <option name="country" value="spain">Spain</option>
+                    <option name="country" value="uk">United Kingdom</option>
+                    <option name="country" value="belgium">Belgium</option>
+                </select>
+                <span class="help">Please select a country.</span>
+            </div>
+
+            <div>
+                <span class="formTitle">Do you wish to receive emails?</span>
+                <input type="checkbox" id="sendEmails" name="sendEmails" / >
+            </div>
+
+            <div><input type="submit"/ ></div>
+
+        </form>
+
+        <script src="formWithControls.js"></script>
+    </body>
+</html>
