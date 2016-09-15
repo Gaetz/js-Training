@@ -18,14 +18,14 @@
             </div>
 
             <div>
-                <span class="formTitle">Name</span>
-                <input type="text" id="name" name="name"/ >
+                <span class="formTitle">Last name</span>
+                <input type="text" id="lastname" name="lastname"/ >
                 <span class="help">Your name must contains more than 2 caracters.</span>
             </div>
 
             <div>
-                <span class="formTitle">Surname</span>
-                <input type="text" id="surname" name="surname"/ >
+                <span class="formTitle">First name</span>
+                <input type="text" id="firstname" name="firstname"/ >
                 <span class="help">Your surname must contains more than 2 caracters.</span>
             </div>
 
@@ -49,17 +49,18 @@
 
             <div>
                 <span class="formTitle">Retype password</span>
-                <input type="password" id="passw2" name="passwd2"/ >
+                <input type="password" id="passwd2" name="passwd2"/ >
                 <span class="help">This password must be identical to the first one.</span>
             </div>
 
             <div>
                 <span class="formTitle">Country</span>
-                <select>
-                    <option name="country" value="france">France</option>
-                    <option name="country" value="spain">Spain</option>
-                    <option name="country" value="uk">United Kingdom</option>
-                    <option name="country" value="belgium">Belgium</option>
+                <select id="country">
+                    <option value="none"></option>
+                    <option value="france">France</option>
+                    <option value="spain">Spain</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="belgium">Belgium</option>
                 </select>
                 <span class="help">Please select a country.</span>
             </div>
@@ -69,7 +70,7 @@
                 <input type="checkbox" id="sendEmails" name="sendEmails" / >
             </div>
 
-            <div><input type="submit"/ ></div>
+            <div><input id="submitButton" type="submit"/ ></div>
 
         </form>
 
